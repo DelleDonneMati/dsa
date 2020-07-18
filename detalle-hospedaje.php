@@ -7,12 +7,31 @@ include("conexion.php");
   <p class="font-weight-bold" align="center">Detalle del hospedaje</p>
 </div>
 <?php
-mysqli_query ($link,"SET NAMES 'utf8'");
-$id = $_GET['var']; //llega el id del hospedaje por paramtro get
-?>
+// mysqli_query ($link,"SET NAMES 'utf8'");
+$sql="NONE";
+$id = mysqli_real_escape_string($link, $_GET['var']);
+$sql = "SELECT * FROM hospedaje WHERE id = '$id'";
 
-<?php
-$result = mysqli_query($link, "SELECT * FROM hospedaje WHERE id = $id ");
+$result = mysqli_query($link, $sql) or die("MAL SQL: $sql");
+
+if (mysqli_num_rows($result)>0) {
+	$flag=true;
+}
+// $stmt = $link->prepare("SELECT * FROM hospedaje where id = '$id'");
+// if ($stmt->execute()) {
+// 	while ($row = $stmt->fetch()) {
+// 		print_r("hola");
+// 	}
+// }
+
+// $id = $_GET['var']; //llega el id del hospedaje por paramtro get
+
+// $id = addslashes($_GET['var']);
+// print($id);
+
+
+
+// $result = mysqli_query($link, "SELECT * FROM hospedaje WHERE id = '$id'");
 while($hospedaje = mysqli_fetch_array($result)){ 
 
 ?>

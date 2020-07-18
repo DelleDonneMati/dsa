@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 17, 2020 at 03:50 PM
+-- Generation Time: Jul 17, 2020 at 05:57 PM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.1.32
 
@@ -45,8 +45,8 @@ CREATE TABLE `hospedaje` (
 
 INSERT INTO `hospedaje` (`id`, `nombre`, `link`, `descripcion`, `direccion`, `pais`, `provincia`, `ciudad`) VALUES
 (34, 'Royal Rio', 'https://t-ec.bstatic.com/images/hotel/max1024x768/120/120546270.jpg', 'Un lugar para dormir bien', 'Av. Bustillo 1231', 'Argentina', 'Buenos aires', 'Palermo'),
-(35, 'Royal Rio 4', 'https://t-ec.bstatic.com/images/hotel/max1024x768/120/120546271.jpg', 'Una descripcion', 'Calle 504', 'Argentina', 'Buenos aires', 'La Plata'),
-(36, 'Iberostar', 'https://t-ec.bstatic.com/images/hotel/max1024x768/120/120546271.jpg', 'passphrase=dsa', 'San martin 450, Mar del Plata', 'Brasil', 'Curitiba', 'Novo Mundo');
+(35, 'Royal Rio 4', 'https://t-ec.bstatic.com/images/hotel/max1024x768/120/120546271.jpg', 'ALL INCLUSIVE', 'Calle 504', 'Argentina', 'Buenos aires', 'La Plata'),
+(36, 'Iberostar', 'https://t-ec.bstatic.com/images/hotel/max1024x768/120/120546271.jpg', 'Hermosa playa', 'San martin 450, Mar del Plata', 'Brasil', 'Curitiba', 'Novo Mundo');
 
 -- --------------------------------------------------------
 
@@ -57,31 +57,30 @@ INSERT INTO `hospedaje` (`id`, `nombre`, `link`, `descripcion`, `direccion`, `pa
 CREATE TABLE `notificacion` (
   `id` int(11) NOT NULL,
   `id_usuario` int(3) NOT NULL,
-  `mensaje` varchar(255) COLLATE utf8_spanish_ci NOT NULL,
-  `dsa_ROT13` varchar(255) COLLATE utf8_spanish_ci NOT NULL
+  `mensaje` varchar(255) COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Dumping data for table `notificacion`
 --
 
-INSERT INTO `notificacion` (`id`, `id_usuario`, `mensaje`, `dsa_ROT13`) VALUES
-(4, 6, 'Se a dado de alta como usuario premium.', ''),
-(5, 6, 'Se a dado de baja como usuario premium.', ''),
-(6, 6, 'Se a dado de alta como usuario premium.', ''),
-(18, 10, 'Se a dado de alta como usuario premium.', ''),
-(19, 10, 'Se a dado de baja como usuario premium.', ''),
-(20, 10, 'Se a dado de alta como usuario premium.', ''),
-(21, 10, 'Se a dado de baja como usuario premium.', ''),
-(22, 10, 'Se a dado de alta como usuario premium.', ''),
-(23, 10, 'Se a dado de baja como usuario premium.', '4cY1x4P1bA3M}'),
-(24, 10, 'Se a dado de alta como usuario premium.', ''),
-(25, 10, 'Se a dado de baja como usuario premium.', ''),
-(27, 10, 'Se a dado de alta como usuario premium.', ''),
-(28, 10, 'Se a dado de baja como usuario premium.', ''),
-(29, 6, 'Se a dado de baja como usuario premium.', ''),
-(31, 6, 'Se a dado de alta como usuario premium.', ''),
-(32, 6, 'Se a dado de baja como usuario premium.', '');
+INSERT INTO `notificacion` (`id`, `id_usuario`, `mensaje`) VALUES
+(4, 6, 'Se a dado de alta como usuario premium.'),
+(5, 6, 'Se a dado de baja como usuario premium.'),
+(6, 6, 'Se a dado de alta como usuario premium.'),
+(18, 10, 'Se a dado de alta como usuario premium.'),
+(19, 10, 'Se a dado de baja como usuario premium.'),
+(20, 10, 'Se a dado de alta como usuario premium.'),
+(21, 10, 'Se a dado de baja como usuario premium.'),
+(22, 10, 'Se a dado de alta como usuario premium.'),
+(23, 10, 'Se a dado de baja como usuario premium.'),
+(24, 10, 'Se a dado de alta como usuario premium.'),
+(25, 10, 'Se a dado de baja como usuario premium.'),
+(27, 10, 'Se a dado de alta como usuario premium.'),
+(28, 10, 'Se a dado de baja como usuario premium.'),
+(29, 6, 'Se a dado de baja como usuario premium.'),
+(31, 6, 'Se a dado de alta como usuario premium.'),
+(32, 6, 'Se a dado de baja como usuario premium.');
 
 -- --------------------------------------------------------
 

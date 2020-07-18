@@ -29,7 +29,7 @@
         <div class="btn-group">
             <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Usuarios</button>&nbsp
          <div class="dropdown-menu">
-            <a class="dropdown-item" href="listado-usuarios.php">Ver todos</a>
+            <a class="dropdown-item" href="#">Ver todos</a>
           </div>
         </div>
 

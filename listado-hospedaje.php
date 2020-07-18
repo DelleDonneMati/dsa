@@ -47,14 +47,21 @@ while($hospedaje = mysqli_fetch_array($result)){
     <div class="col-md-8">
       <div class="card-body">
         <h5 class="card-title"><?php echo $hospedaje['nombre']; ?></h5>
-        <p class="card-text"><a href="detalle-hospedaje.php?var=<?php echo $hospedaje['id']?>" class="badge badge-info">Ver detalles</a>
+        <p class="card-text"><a href="detalle-hospedaje.php?var=<?php echo $hospedaje['id']?>" class="badge badge-info" method="POST">Ver detalles</a>
         <a href="eliminar-hospedaje.php?var=<?php echo $hospedaje['id']?>" onclick="return valida()" class="badge badge-danger">Eliminar</a>  
         </p>
       </div>
     </div>
   </div>
 </div>
+</div>
 
+<!-- <form action="detalle-hospedaje.php" method="POST">
+    
+
+  <button type="submit" name="submit">Ver Detalle</button>
+</form>
+ -->
 
 <?php } }?>
 
