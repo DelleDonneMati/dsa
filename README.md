@@ -13,7 +13,7 @@ Instalar base de datos
 
 Forma de explotarlo
 
-#La FLAG se divide en 3 partes:
+##La FLAG se divide en 3 partes:
 
 Primera parte:
 ```
