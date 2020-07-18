@@ -4,8 +4,8 @@ Autor:Matias Delle Donne
 
 
 Dependencias
--XAMPP
--sqlmap
+- XAMPP
+- sqlmap
 
 Instalar y activar XAMPP
 
@@ -21,9 +21,9 @@ Se encuentra en login.php, inspeccionando la pagina debemos bajar hasta el final
 ```
 
 Segunda Parte:
--Debemos estar en login.php y acceder como usuario normal en este caso:
-Usuario:gaston@hotmail.com
-Contraseña:123
+Debemos estar en login.php y acceder como usuario normal en este caso:
+- Usuario:gaston@hotmail.com
+- Contraseña:123
 
 Accedemos a nuestro perfil desde el apartado con nuestro nombre (Gaston) la opcion "Mi perfil"
 
@@ -45,17 +45,16 @@ Si todo va bien obtendremos un archivo llamado mensaje, el cual si le hacemos ca
 
 Tercera parte:
 
--Nos logueamos como admin
-Usuario:admin@admin.com
-Contraseña:123
+Nos logueamos como admin
+- Usuario:admin@admin.com
+- Contraseña:123
 
 
 Accedemos al listado de hospedajes 
 Seleccionamos el la opcion "Ver detalles" y obtememos la url
 Utilizamos sqlmap para obtener las tablas con el comando
-```
-sqlmap -u "http://localhost/detalle-hospedaje.php?var=34" --dbs
-```
+```sqlmap -u "http://localhost/detalle-hospedaje.php?var=34" --dbs```
+
 Con eso buscaremos las tablas 
 ```sqlmap -u "http://localhost/detalle-hospedaje.php?var=34" -D switchhome --tables```
 
@@ -68,4 +67,4 @@ Y luego debemos obtener
 
 
 LA FLAG ENTERA:
-Primera Parte + Segunda Parte + Tercera Parte
+```Primera Parte + Segunda Parte + Tercera Parte```
