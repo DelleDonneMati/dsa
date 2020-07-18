@@ -1,6 +1,7 @@
 # TP-DSA: App Home SWITCHHome
 
-Autor:Matias Delle Donne
+Autor:
+- Matias Delle Donne
 
 
 Dependencias
