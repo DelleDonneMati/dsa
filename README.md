@@ -1,19 +1,17 @@
 # TP-DSA: App Home SWITCHHome
 
-##Autor
-
-Matias Delle Donne
+Autor:Matias Delle Donne
 
 
-##Dependencias
+Dependencias
 -XAMPP
 -sqlmap
 
-##Instalar y activar XAMPP
+Instalar y activar XAMPP
 
-##Instalar base de datos
+Instalar base de datos
 
-##Forma de explotarlo
+Forma de explotarlo
 
 #La FLAG se divide en 3 partes:
 
@@ -35,7 +33,7 @@ Al descargarla usamos el comando:
 
 ```steghide extract -sf card.jpg```
 
-##ACLARACION
+ACLARACION
 - card.jpg es el nombre que le puse, si lo cambian, cambiendolo en el comando
 
 
@@ -69,55 +67,5 @@ Y luego debemos obtener
 
 
 
-##LA FLAG ENTERA
+LA FLAG ENTERA:
 Primera Parte + Segunda Parte + Tercera Parte
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
