@@ -18,6 +18,9 @@ Para activar XAMPP, utilizo los comandos
 
 Instalar base de datos entrando en localhost/phpmyadmin/
 
+Tener los achivos del proyecto en la carpeta htdocs, localizada en /opt/lampp/htdocs
+
+
 **La FLAG se divide en 3 partes:**
 
 Primera parte:
