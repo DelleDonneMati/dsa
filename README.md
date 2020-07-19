@@ -9,7 +9,12 @@ Dependencias
 - sqlmap
 - Base de Datos: switchhome.sql
 
-Instalar y activar XAMPP
+Para activar XAMPP, utilizo los comandos 
+- service mysql stop
+- sudo /opt/lampp/lampp start
+- cd /opt/lampp/
+- sudo ./manager-linux-x64.run
+
 
 Instalar base de datos
 
