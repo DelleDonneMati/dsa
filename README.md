@@ -7,6 +7,7 @@ Autor:
 Dependencias
 - XAMPP
 - sqlmap
+- Base de Datos: switchhome.sql
 
 Instalar y activar XAMPP
 
