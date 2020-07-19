@@ -60,8 +60,10 @@ Nos logueamos como admin
 - Contraseña:123
 
 
-Accedemos al listado de hospedajes 
-Seleccionamos el la opcion "Ver detalles" y obtememos la url
+Accedemos al listado de hospedajes de la opcion "Hospedaje" el apartado "Ver Todos" 
+
+Seleccionando la opcion "Ver detalles" y obtememos la url
+
 Utilizamos sqlmap para obtener las tablas con el comando
 ```
 sqlmap -u "http://localhost/detalle-hospedaje.php?var=34" --dbs
