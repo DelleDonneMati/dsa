@@ -16,7 +16,7 @@ Para activar XAMPP, utilizo los comandos
 - sudo ./manager-linux-x64.run
 
 
-Instalar base de datos
+Instalar base de datos entrando en localhost/phpmyadmin/
 
 **La FLAG se divide en 3 partes:**
 
